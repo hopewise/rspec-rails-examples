@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.3'
+gem 'rails', '~> 4.2.4', git: "git://github.com/rails/rails.git", branch: '4-2-stable'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
@@ -42,3 +42,6 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
+
+gem 'json', github: 'flori/json', branch: 'v1.8'
+gem 'mysql2'
